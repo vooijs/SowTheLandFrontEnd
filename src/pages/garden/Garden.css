@@ -1,34 +1,64 @@
-.outerContainer {
-    display: flex;
+.sectionSideBar {
     width: 100%;
-}
-.container {
+    height: auto;
     display: flex;
-}
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+  @media only screen and (max-width: 1023px) {
+    .sectionSideBar {
+        flex-direction: column;
+    }
+  }
 
-.buttonContainer {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-.rightSection{
+.gardenContainer {
+    width: 60%;
     display: flex;
     flex-direction: column;
+    margin: 0 40px;
 }
+@media only screen and (max-width: 1023px) {
+    .gardenContainer {
+        width: auto;
+    }
+}
+
+.gardenCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.sideBar {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+}
+
 .weatherCalenderContainer {
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
-.weer {
-    width: 35%;
-    height: 35%;
+
+.sidebarButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
+
 .calender {
     width: 35%;
     height: 35%;
 }
-.tipSection {
-    width: 67%;
-    display: flex;
-    justify-content: space-evenly;
+@media only screen and (max-width: 1023px) {
+    .calender {
+        width: 100%;
+    }
 }
