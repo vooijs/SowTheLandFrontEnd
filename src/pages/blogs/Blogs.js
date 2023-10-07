@@ -46,25 +46,25 @@ function Blogs() {
         },
         {   id:6,
             img: moestuin,
-            alt: moestuin,
+            alt: "moestuin",
             title: "how to grow food in your own garden",
             article:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorum, facilis itaque minus obcaecati quia sed ullam unde? Libero, nesciunt?"
         },
         {   id:7,
             img: apple,
-            alt: apple,
+            alt: "apple",
             title: "how to grow food in your own garden",
             article:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorum, facilis itaque minus obcaecati quia sed ullam unde? Libero, nesciunt?"
         },
         {   id:8,
             img: strawberrie,
-            alt: strawberrie,
+            alt: "strawberrie",
             title: "how to grow food in your own garden",
             article:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorum, facilis itaque minus obcaecati quia sed ullam unde? Libero, nesciunt?"
         },
         {   id:9,
             img: patato,
-            alt: patato,
+            alt: "patato",
             title: "how to grow food in your own garden",
             article:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolorum, facilis itaque minus obcaecati quia sed ullam unde? Libero, nesciunt?"
         }
