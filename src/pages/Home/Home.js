@@ -40,34 +40,34 @@ function Home () {
                        <Button title="read more"/>
                    </article>
                </div>
-           </div>
-           <div className="section">
-            <div className="blogContainer">
-                <Blog
-                    img={apple}
-                    alt="apple"
-                    title="Apple"
-                    teaser="Sweet and juicy apple"
-                    blog="lorem"
-                />
-                <Blog
-                    img={cherry}
-                    alt="cherry"
-                    title="Cherry"
-                    teaser="Pop my cherry"
-                    blog="lorem"
-                />
-                <Blog
-                    img={peach}
-                    alt="peach"
-                    title="Peach"
-                    teaser="I can eat a peach for hours"
-                    blog="lorem"
-                />
+            </div>
+            <div className="section">
+                <div className="blogCards">
+                    <Blog
+                        img={apple}
+                        alt="apple"
+                        title="Apple"
+                        teaser="Sweet and juicy apple"
+                        blog="lorem"
+                    />
+                    <Blog
+                        img={cherry}
+                        alt="cherry"
+                        title="Cherry"
+                        teaser="Pop my cherry"
+                        blog="lorem"
+                    />
+                    <Blog
+                        img={peach}
+                        alt="peach"
+                        title="Peach"
+                        teaser="I can eat a peach for hours"
+                        blog="lorem"
+                    />
                 </div>
            </div>
        </div>
-    )
+    );
 }
 
-export default Home
+export default Home;

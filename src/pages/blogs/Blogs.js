@@ -10,9 +10,10 @@ import seedling from "../../assets/backgrpund.jpg";
 import weather from "../../assets/weer.jpg";
 import strawberrie from "../../assets/strawberrie.jpg";
 import patato from "../../assets/patato.jpg";
+
 function Blogs() {
     const [content, setContent] = useState(
-   [
+    [
         {   id:1,
             img: logo,
             alt: logo,
@@ -70,18 +71,27 @@ function Blogs() {
     ]);
 
     return (
-        <div className="blog">
-            <div className="blogHeading">
-                <span>My recent post</span>
-                <h3>My Blog</h3>
-            </div>
-
+        <div className="section">
             <div className="blogContainer">
-                {content.map((cont)=>{
-                  return <Blog img={cont.img} alt={cont.alt} title={cont.title} article={cont.article}/>
-                })}
+                <div className="blogsHeading">
+                    <span>My recent post</span>
+                    <h3>My Blog</h3>
+                </div>
+                <div className="blogCards">
+                    {
+                        content.map((cont)=> {
+                            return <Blog
+                                img={cont.img}
+                                alt={cont.alt}
+                                title={cont.title}
+                                article={cont.article}
+                            />
+                        })
+                    }
+                </div>
             </div>
         </div>
     );
 }
+
 export default Blogs;

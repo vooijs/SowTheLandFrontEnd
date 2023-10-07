@@ -2,7 +2,7 @@ import React from "react";
 import "./Blog.css";
 import {Link} from "react-router-dom";
 
-function Blog(props) {
+function Blog  (props) {
     return(
         <>
             <div className="blogBox">
@@ -14,8 +14,14 @@ function Blog(props) {
                     <Link to="/blogpost" className="blogTitle">
                         {props.title}
                     </Link>
-                    {props.teaser && <p className="blogArticle">{props.teaser}</p>}
-                    {props.article && <p className="blogArticle">{props.article}</p>}
+                    {
+                        props.teaser &&
+                        <p className="blogArticle">{props.teaser}</p>
+                    }
+                    {
+                        props.article &&
+                        <p className="blogArticle">{props.article}</p>
+                    }
                     <Link to="/blogpost" className="readMore">{props.buttonTitle }</Link>
                 </div>
 
@@ -23,4 +29,5 @@ function Blog(props) {
         </>
     );
 }
+
 export default Blog;
