@@ -4,9 +4,6 @@ import userIcon from "../../assets/iconUser.png"
 import emailIcon from "../../assets/iconEmail.png"
 import passwordIcon from "../../assets/iconPassword.png"
 
-
-
-
 function RegisterLogin() {
     const [action, setAction] = useState("Sign up")
     return(
@@ -34,9 +31,6 @@ function RegisterLogin() {
                 <div className={action==="Login"?"submit gray":"submit"} onClick={()=>{setAction("Sign up")}}>Sign up</div>
                  <div className={action==="Sign up"?"submit gray":"submit"} onClick={()=>{setAction("Login")}}>Login</div>
             </div>
-
-
-
         </div>
     );
 }

@@ -1,9 +1,10 @@
 .containerLoginSignup {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    margin-top: 200px;
-    width: 600px;
+    width: auto;
     background: #F9FFF1;
     padding-bottom: 30px;
 }
@@ -31,7 +32,7 @@
 }
 
 .inputs {
-    margin-top: 55px;
+    margin: 40px 40px 0px 40px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -46,15 +47,19 @@
     background: #E2F6B6;
     border-radius: 6px;
 }
+@media only screen and (max-width: 769px) {
+    .input {
+        width: 100%;
+    }
+}
 
 .input img{
-
     margin: 0px 30px;
 }
 
 .input input{
     height: 50px;
-    width: 400px;
+    width: 100%;
     background: transparent;
     border: none;
     outline: none;
@@ -79,6 +84,11 @@
     gap: 30px;
     margin: 60px auto;
 }
+@media only screen and (max-width: 769px) {
+    .submitContainer {
+        flex-direction: column;
+    }
+}
 
 .submit {
     display: flex;
@@ -98,5 +108,3 @@
     background: #E2F6B6;
     color: #7D9A3E;
 }
-
-
