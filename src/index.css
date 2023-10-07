@@ -1,0 +1,95 @@
+body {
+
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-image: linear-gradient(#F9FFF1, #7D9A3E );
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#grad {
+  ;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.section-small {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+
+/*HOMEPAGE*/
+
+.seasonSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seasonCrop {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+.blogpost {
+  background-color: #E2F6B6;
+  display: flex;
+}
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blogpost image {
+  width: 50%;
+}
+
+@media only screen and (max-width: 992px) {
+  .seasonCrop {
+    flex-direction: column;
+  }
+  .blogpost {
+    flex-direction: column;
+  }
+}
+
+
+
+/*Crops page*/

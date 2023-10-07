@@ -1,0 +1,15 @@
+.carousel div img{
+    width: 80%;
+}
+
+.buttonSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.searchbarSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

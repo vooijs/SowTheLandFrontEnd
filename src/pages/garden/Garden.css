@@ -1,0 +1,34 @@
+.outerContainer {
+    display: flex;
+    width: 100%;
+}
+.container {
+    display: flex;
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.rightSection{
+    display: flex;
+    flex-direction: column;
+}
+.weatherCalenderContainer {
+    display: flex;
+    justify-content: space-around;
+}
+.weer {
+    width: 35%;
+    height: 35%;
+}
+.calender {
+    width: 35%;
+    height: 35%;
+}
+.tipSection {
+    width: 67%;
+    display: flex;
+    justify-content: space-evenly;
+}
