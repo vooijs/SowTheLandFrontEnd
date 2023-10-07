@@ -10,7 +10,7 @@ import carrot from "../../assets/carrot.jpg";
 import mint from "../../assets/mint.jpg";
 import Blog from "../../components/Blog/Blog";
 import search from "../../assets/search.png";
-import {cropsData} from "../../cropsData.js";
+import {cropsData} from "../../cropsData";
 
 function Crops() {
     const [inputText, setInputText] = useState("")
