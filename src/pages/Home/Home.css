@@ -1,51 +1,51 @@
 .seasonSection {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .seasonCrop {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: space-around;
-    gap: 25px;
-  }
-  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seasonCrop {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+.textAndImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 992px) {
   .textAndImageContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  @media only screen and (max-width: 992px) {
-    .textAndImageContainer {
-      flex-direction: column;
-    }
-  }
-  
-  .textAndImage {
-    display: flex;
     flex-direction: column;
-    align-items: center;
   }
-  .textAndImage h2 {
-    margin-bottom: 10px;
+}
+
+.textAndImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.textAndImage h2 {
+  margin-bottom: 10px;
+}
+
+.devicesPicContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .devicesPic {
+    width: 300px;
   }
-  
-  .devicesPicContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .seasonCrop {
+    flex-direction: column;
   }
-  
-  @media only screen and (max-width: 767px) {
-    .devicesPic {
-      width: 300px;
-    }
-  }
-  
-  @media only screen and (max-width: 992px) {
-    .seasonCrop {
-      flex-direction: column;
-    }
-  }
+}

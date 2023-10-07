@@ -2,7 +2,7 @@ import React from "react";
 import "./Blog.css";
 import {Link} from "react-router-dom";
 
-function Blog  (props) {
+function Blog(props) {
     return(
         <>
             <div className="blogBox">
@@ -10,21 +10,15 @@ function Blog  (props) {
                     <img src={props.img} alt={props.alt}/>
                 </div>
                 <div className="blogText">
-                    <span>23 September 2023 / web development</span>
-                    <Link to="/blogpost" className="blogTitle">
-                        {props.title}
-                    </Link>
+                    {props.subtitle && <span className="blogSubtitle">{props.subtitle}</span>}
                     {
-                        props.teaser &&
-                        <p className="blogArticle">{props.teaser}</p>
+                        props.redirect ? <Link to={props.redirect} className="blogTitle">{props.title}</Link>
+                        : <div className="blogTitle">{props.title}</div>
                     }
-                    {
-                        props.article &&
-                        <p className="blogArticle">{props.article}</p>
-                    }
-                    <Link to="/blogpost" className="readMore">{props.buttonTitle }</Link>
+                    {props.teaser && <p className="blogArticle">{props.teaser}</p>}
+                    {props.article && <p className="blogArticle">{props.article}</p>}
+                    {props.buttonTitle && <Link to={props.redirect} className="button">{props.buttonTitle}</Link>}
                 </div>
-
             </div>
         </>
     );

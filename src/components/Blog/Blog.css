@@ -1,73 +1,69 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.blogBox {
+  width: 350px;
+  background-color: #F9FFF1;
+  margin: 20px
+}
+@media only screen and (max-width: 769px) {
   .blogBox {
-    width: 350px;
-    background-color: #F9FFF1;
-    border: 1px solid #E2F6B6;
-    margin: 20px
+      margin: 0 5px 20px 5px;
+      width: 100%;
   }
-  @media only screen and (max-width: 768px) {
-    .blogBox {
-        margin: 0 5px 20px 5px;
-    }
-  }
-  
-  .blogBox:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  
-  .blogImg {
-    width: 100%;
-    height: 300px;
-  }
-  .blogImg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .blogText {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-  }
-  .blogText span{
-    color: #d87151;
-    font-size: 16px;
-  }
-  
-  .blogTitle {
-    font-size: 20px;
-    font-weight: 500;
-    color: #797979;
-    margin-top: 25px;
-    padding: 0;
-  }
-  .blogTitle:hover{
-    color: #d87151;
-    transition: all ease 0.5s;
-  }
-  
-  .blogArticle {
-    color: #797979;
-    font-size: 16px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 20px 0px;
-  }
-  
-  .readMore {
-    color: #797979;
-  }
-  .readMore:hover {
-    color: #d87151;
-    transition: all ease 0.5s;
-  }
+}
+
+.blogBox:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.blogImg {
+  width: 100%;
+  height: 300px;
+}
+.blogImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blogText {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.blogText span{
+  color: #d87151;
+  font-size: 16px;
+}
+
+.blogSubtitle {
+  text-transform: uppercase;
+}
+
+.blogTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #797979;
+  margin-top: 25px;
+  padding: 0;
+}
+.blogTitle:hover{
+  color: #d87151;
+  transition: all ease 0.5s;
+}
+
+.blogArticle {
+  color: #797979;
+  font-size: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+}
