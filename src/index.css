@@ -40,10 +40,3 @@ h1 {
   flex-direction: column;
   margin: 0 40px;
 }
-
-.searchBar {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  width: 100%;
-}

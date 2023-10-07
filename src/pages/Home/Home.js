@@ -11,22 +11,40 @@ function Home () {
 
     return (
        <div className="section-container">
-           <div className="section-small">
-               <div className="searchBar">
-                   <form className="form-style">
-                       <input type="search" id="mySearch" name="q" placeholder="find your crops" />
-                       <button>Search</button>
-                   </form>
-               </div>
-           </div>
-           <div className="section">
+            <div className="section">
                <div className= "seasonSection">
                    <h1>This is the season for:</h1>
-                   <div className="seasonCrop">
-                 <p>carddisplay</p>
-                   </div>
-               </div>
-           </div>
+                    <div className="blogCards">
+                        <Blog
+                            img={apple}
+                            alt="apple"
+                            subtitle="23 September 2023 / web development"
+                            title="Apple"
+                            teaser="Sweet and juicy apple"
+                            blog="lorem"
+                            redirect="/blogpost"
+                        />
+                        <Blog
+                            img={cherry}
+                            alt="cherry"
+                            subtitle="23 September 2023 / web development"
+                            title="Cherry"
+                            teaser="Pop my cherry"
+                            blog="lorem"
+                            redirect="/blogpost"
+                        />
+                        <Blog
+                            img={peach}
+                            alt="peach"
+                            subtitle="23 September 2023 / web development"
+                            title="Peach"
+                            teaser="I can eat a peach for hours"
+                            blog="lorem"
+                            redirect="/blogpost"
+                        />
+                    </div>
+                </div>
+            </div>
            <div className="section">
                <div className="textAndImageContainer">
                     <div className="devicesPicContainer">
@@ -41,31 +59,6 @@ function Home () {
                    </article>
                </div>
             </div>
-            <div className="section">
-                <div className="blogCards">
-                    <Blog
-                        img={apple}
-                        alt="apple"
-                        title="Apple"
-                        teaser="Sweet and juicy apple"
-                        blog="lorem"
-                    />
-                    <Blog
-                        img={cherry}
-                        alt="cherry"
-                        title="Cherry"
-                        teaser="Pop my cherry"
-                        blog="lorem"
-                    />
-                    <Blog
-                        img={peach}
-                        alt="peach"
-                        title="Peach"
-                        teaser="I can eat a peach for hours"
-                        blog="lorem"
-                    />
-                </div>
-           </div>
        </div>
     );
 }

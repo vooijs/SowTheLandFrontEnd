@@ -78,14 +78,11 @@ function Garden() {
                 </div>
             </div>
             <div className="sideBar">
+                <div className="sidebarButtons">
+                    <Link to="/crops"><Button title="Find crops for my garden"/></Link>
+                </div>
                 <div className="weatherCalenderContainer">
                     <img src={calender} alt="calender" className="calender"/>
-                </div>
-                <div className="sidebarButtons">
-                    <Link to="/garden"><Button title="Go to Garden"/></Link>
-                    <Link to="/crops#fruit"><Button title="fruit"/></Link>
-                    <Link to="/crops#veggies"><Button title="veggies"/></Link>
-                    <Link to="/crops#herbs"><Button title="herbs"/></Link>
                 </div>
             </div>
         </div>
